@@ -1,0 +1,13 @@
+<div class="tarjeta-container">
+  <div class="tarjeta-imagen">
+    <img [src]="producto?.imagenUrl" alt="Imagen del producto">
+  </div>
+
+  <div class="tarjeta-info">
+    <h2>{{ producto?.titulo }}</h2>
+    <p>{{ producto?.descripcion }}</p>
+    <h3>${{ producto?.precio }}</h3>
+
+    <button>Agregar al carrito</button>
+  </div>
+</div>

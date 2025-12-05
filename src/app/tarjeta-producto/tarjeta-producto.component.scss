@@ -1,0 +1,46 @@
+.tarjeta-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: 700px) {
+    flex-direction: row;
+  }
+}
+
+.tarjeta-imagen {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+
+  @media (min-width: 700px) {
+    width: 40%;
+    aspect-ratio: auto;
+  }
+}
+
+.tarjeta-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tarjeta-info {
+  padding: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #1976d2;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
